@@ -20,7 +20,7 @@
 (:action goto
         :parameters (?who ?from ?to)
         :precondition (and (at ?who ?from) (know-path ?who ?to))
-        :effect (and (not (at ?who ?from)) (at ?who ?to))
+        :effect (and (at ?who ?to))
 )
 
 (:action meet
