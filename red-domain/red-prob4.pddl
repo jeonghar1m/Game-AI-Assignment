@@ -6,11 +6,11 @@
 
 (:init
     (person red) (at red woods) (at wolf woods) (at granny granny-house)
-    (at red granny-house)
-    (know-path red granny-house)
+
+    (know-path red granny-house) (know-path wolf granny-house)
 )
 
-(:goal (and (greeting red wolf) (know-path wolf granny-house)  (at wolf granny-house) (eat wolf granny)
+(:goal (and (greeting red wolf) (know-path wolf granny-house)  (at wolf granny-house) (eat wolf granny) (at red granny-house) (eat wolf red)
 ))
 
 ;un-comment the following line if metric is needed
